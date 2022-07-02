@@ -1,0 +1,36 @@
+body {
+  background-color: #ebf2ff;
+}
+main {
+  height: 100vh;
+  margin: 1rem !important;
+  margin-top: 2rem !important;
+}
+main > div {
+  background-color: #ebf2ff;
+}
+main section {
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.section-header {
+  background-color: #f4ebd9;
+  padding: 0.5rem 1rem;
+}
+
+input {
+  width: 90%;
+  border: 1px solid #ddd;
+  height: 2rem;
+  padding: 0.5rem !important;
+  margin: 0.5rem 1rem;
+}
+
+.fields p {
+  cursor: pointer;
+}
+
+.fields p:hover {
+  background-color: #f4ebd9;
+}
