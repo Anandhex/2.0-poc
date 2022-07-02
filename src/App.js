@@ -35,6 +35,8 @@ const getImage = (type) => {
       return radio;
     case "image":
       return image;
+    default:
+      return input;
   }
 };
 
@@ -148,49 +150,49 @@ function App() {
                 className="px-3 py-2 flex align-items-center"
                 onClick={() => addField(0)}
               >
-                <img src={input} /> Input Field
+                <img alt="icon" src={input} /> Input Field
               </p>
               <p
                 key={2}
                 className="px-3 py-2 flex align-items-center"
                 onClick={() => addField(1)}
               >
-                <img src={dropDown} /> Drop Down
+                <img alt="icon" src={dropDown} /> Drop Down
               </p>
               <p
                 key={3}
                 className="px-3 py-2 flex align-items-center"
                 onClick={() => addField(2)}
               >
-                <img src={textArea} /> Text Area
+                <img alt="icon" src={textArea} /> Text Area
               </p>
               <p
                 key={4}
                 className="px-3 py-2 flex align-items-center"
                 onClick={() => addField(3)}
               >
-                <img src={date} /> Date
+                <img alt="icon" src={date} /> Date
               </p>
               <p
                 key={5}
                 className="px-3 py-2 flex align-items-center"
                 onClick={() => addField(4)}
               >
-                <img src={checkBox} /> Check Box
+                <img alt="icon" src={checkBox} /> Check Box
               </p>
               <p
                 key={6}
                 className="px-3 py-2 flex align-items-center"
                 onClick={() => addField(5)}
               >
-                <img src={radio} /> Radio Button
+                <img alt="icon" src={radio} /> Radio Button
               </p>
               <p
                 key={7}
                 className="px-3 py-2 flex align-items-center"
                 onClick={() => addField(6)}
               >
-                <img src={image} /> Image
+                <img alt="icon" src={image} /> Image
               </p>
             </section>
           </div>
@@ -214,6 +216,7 @@ function App() {
                     >
                       <img
                         className="col-1"
+                        alt="icon"
                         height={30}
                         width={30}
                         src={getImage(field.type ? field.type : "input")}
@@ -227,8 +230,8 @@ function App() {
                         ""
                       ) : (
                         <div className="col-1">
-                          <img src={clone} height={20} width={20} />{" "}
-                          <img src={del} height={20} width={20} />{" "}
+                          <img alt="icon" src={clone} height={20} width={20} />{" "}
+                          <img alt="icon" src={del} height={20} width={20} />{" "}
                         </div>
                       )}
                     </div>
