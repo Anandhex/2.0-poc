@@ -48,8 +48,7 @@ function App() {
     {
       sectionId: "General Details",
       fields: [
-        { id: 0, label: "Fender ID", disabled: true },
-        { id: 1, label: "Location", disabled: true },
+        { id: 0, label: "Fender Type", disabled: true, type: "dropDown" },
       ],
     },
   ]);
