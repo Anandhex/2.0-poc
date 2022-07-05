@@ -63,6 +63,34 @@ export const FenderTypes = [
       "Supports",
     ],
   },
+  {
+    fenderType: "Pneumatic Fender - Floating",
+    avialableCalculationFields: [
+      "Rubber Body - Cracks",
+      "Rubber Body - Chipping",
+      "Rubber Body - Separation",
+      "Rubber Body - Wear",
+      "Rubber Body- Cuts",
+      "Rubber Body - Ozone cracks",
+      "Rubber Body - Burns",
+      "Supports",
+    ],
+  },
+  {
+    fenderType: "Pneumatic Fender - With Panel",
+    avialableCalculationFields: [
+      "Rubber Body - Cracks",
+      "Rubber Body - Separation",
+      "Rubber Body - Wear",
+      "Rubber Body- Cuts",
+      "Rubber Body - Ozone cracks",
+      "Rubber Body - Burns",
+      "Fixing",
+      "Supports",
+      "Fender panel",
+      "Resin pad",
+    ],
+  },
 ];
 
 export const calculationSections = [
@@ -485,6 +513,76 @@ export const calculationSections = [
           {
             name: "N/A",
             value: "N/A",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    sectionId: "Mooring parts",
+    fields: [
+      {
+        id: 0,
+        label: "Bend",
+        type: "dropDown",
+        data: [
+          {
+            name: "Major",
+            value: "Major",
+          },
+          {
+            name: "Minor",
+            value: "Minor",
+          },
+          {
+            name: "N/A",
+            value: "N/A",
+          },
+        ],
+      },
+      {
+        id: 1,
+        label: "Cuts",
+        type: "dropDown",
+        data: [
+          {
+            name: "Major",
+            value: "Major",
+          },
+          {
+            name: "Minor",
+            value: "Minor",
+          },
+          {
+            name: "N/A",
+            value: "N/A",
+          },
+        ],
+      },
+      {
+        id: 2,
+        type: "dropDown",
+        label: "Corroision Condition",
+        data: [
+          {
+            name: "No corrosion",
+            value: "No corrosion",
+          },
+          {
+            name: "Discoloration",
+            value: "Discoloration",
+          },
+          {
+            name: "Discoloration of bolt and red rust on washer",
+            value: "Discoloration of bolt and red rust on washer",
+          },
+          {
+            name: "Red rust",
+            value: "Red rust",
+          },
+          {
+            name: "Red rust swell",
+            value: "Red rust swell",
           },
         ],
       },
