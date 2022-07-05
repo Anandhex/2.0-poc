@@ -98,6 +98,12 @@ function App() {
             <option key={3} value={"Cylindrical"}>
               Cylindrical
             </option>
+            <option key={4} value={"Pneumatic Fender - Floating"}>
+              Pneumatic Fender - Floating
+            </option>
+            <option key={5} value={"Pneumatic Fender - With Panel"}>
+              Pneumatic Fender - With Panel
+            </option>
           </select>
         </label>
       </div>
